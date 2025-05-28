@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import ross as rs
 import numpy as np
@@ -6,6 +5,7 @@ import numpy as np
 # uncomment the lines below if you are having problems with plots not showing
 import plotly.io as pio
 pio.renderers.default = "browser"
+
 #======================================================================================
 path=  "rotorModels/testRotor3.toml"
  
