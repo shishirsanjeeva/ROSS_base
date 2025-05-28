@@ -19,5 +19,8 @@ print("Rotor total mass = ", np.round(rotor1.m, 2))
 print("Rotor center of gravity =", np.round(rotor1.CG, 2))
  
 # plotting the rotor model
-fig =rotor1.plot_rotor()
-fig.show()
+rotor1.plot_rotor(check_sld= True).show()  # Plot the rotor model
+
+#***********STATIC ANALYSIS****************
+static = rotor1.run_static()
+static.plot_free_body_diagram().show()  # Plot the free body diagram of the rotor
